@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css?family=Lato");
+
+body {
+  background: rgb(72, 153, 230);
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+.container {
+  min-height: 100%;
+  display: flex;
+}
+
+.half {
+  display: flex;
+  flex-direction: column;
+}
+
+.editorWrap,
+.previewWrap {
+  flex: 1; /* 1 = 1 1 0 */
+  padding: 1rem;
+  overflow-wrap: break-word;
+  overflow: auto;
+}
+
+.editorWrap textarea {
+  resize: none;
+}
+
+.toolbar {
+  background-color: #7389b8;
+  padding: 5px;
+  border: 1px solid #1d2f2f;
+  box-shadow: 1px 1px 10px 2px #3a4b5f;
+  font-family: Lato;
+  display: flex;
+  justify-content: space-between;
+}
+
+#preview,
+#editor {
+  height: 100%;
+  background-color: #fffffff1;
+  border: 1px solid #1d2f2f;
+  box-shadow: 1px 1px 10px 2px #3a4b5f;
+  border-top: none;
+  padding: 10px;
+}
+
+.hide {
+  display: none;
+}
+
+.toolbar i:hover {
+  color: #243c68;
+  cursor: pointer;
+}
+
+#preview blockquote {
+  border-left: 3px solid rgb(34, 48, 75);
+  color: rgb(34, 48, 75);
+  padding-left: 5px;
+  margin-left: 25px;
+}
+
+#preview code {
+  background: rgb(34, 48, 75);
+  color: rgb(226, 226, 226);
+  padding: 1px 4px 2px 4px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+#preview pre {
+  background: rgb(34, 48, 75);
+  color: rgb(226, 226, 226);
+  padding: 5px 0 5px 5px;
+  overflow: auto;
+}
+
+#preview h1 {
+  border-bottom: 2px solid rgb(34, 52, 75);
+}
+
+#preview h2 {
+  border-bottom: 1px solid rgb(34, 52, 75);
+}
+
+#preview table {
+  border-collapse: collapse;
+  table-layout: fixed;
+  width: 100%;
+}
+
+#preview ul,
+#preview ol {
+  padding-left: 20px;
+  overflow-wrap: break-word;
+}
+
+#preview td,
+#preview th {
+  border: 2px solid rgb(34, 52, 75);
+  padding-left: 5px;
+  padding-right: 5px;
+}
