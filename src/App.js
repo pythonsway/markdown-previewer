@@ -12,7 +12,7 @@ marked.setOptions({
 // target="_blank"
 const renderer = new marked.Renderer();
 renderer.link = function (href, title, text) {
-  return `<a target="_blank" href="${href}">${text} </a>`;
+  return `<a href="${href}" target="_blank" rel="noopener">${text} </a>`;
 };
 
 class App extends React.Component{
