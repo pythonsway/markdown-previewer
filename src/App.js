@@ -60,7 +60,7 @@ class App extends React.Component{
           <Toolbar 
             icon={classes[2]} 
             onClick={this.handleEditorMaximize}
-            text="Editor"/>
+            text="Markdown Editor"/>
           <Editor markdown={this.state.markdown} 
             onChange={this.handleChange} />
         </div>
@@ -68,7 +68,7 @@ class App extends React.Component{
           <Toolbar
             icon={classes[2]} 
             onClick={this.handlePreviewMaximize}
-            text="Previewer"/>
+            text="HTML Preview"/>
           <Preview  markdown={this.state.markdown}/>
         </div>
       </div>
