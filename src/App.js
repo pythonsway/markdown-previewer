@@ -44,15 +44,15 @@ class App extends React.Component{
   }
   render() {
     const classes = this.state.editorMaximized ? 
-          ['editorWrap half', 
+          ['editorWrap', 
            'previewWrap hide', 
            'far fa-minus-square'] : 
           this.state.previewMaximized ?
           ['editorWrap hide', 
-           'previewWrap half', 
+           'previewWrap', 
            'far fa-minus-square'] :
-          ['editorWrap half', 
-           'previewWrap half', 
+          ['editorWrap', 
+           'previewWrap', 
            'far fa-window-maximize'];
     return (
       <div className="container">
